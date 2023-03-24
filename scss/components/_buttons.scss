@@ -1,0 +1,29 @@
+@use "../base/abstracts" as *;
+
+.button {
+	font-size: var(--13px);
+	letter-spacing: 1.5px;
+	color: var(--text-secondary);
+	background: var(--bg-btn-gradient);
+	border: none;
+	width: 100%;
+	padding: rem(14) 0;
+	border-radius: rem(6);
+
+	&:focus-visible {
+		background: transparent;
+		color: var(--text-accent-violet);
+		outline: 1px solid var(--outline-violet);
+	}
+}
+
+.button--white {
+	background: var(--bg-btn);
+	color: var(--text-accent-violet);
+
+	&:focus-visible {
+		background: transparent;
+		color: var(--text-secondary);
+		outline: 1px solid var(--outline-white);
+	}
+}

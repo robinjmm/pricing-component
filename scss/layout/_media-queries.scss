@@ -1,0 +1,12 @@
+@use "../base/abstracts" as *;
+
+@media (min-width: rem(375)) {
+	.card {
+		width: 87%;
+		max-width: rem(350);
+
+		&__value {
+			font-size: var(--72px);
+		}
+	}
+}

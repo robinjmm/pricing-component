@@ -1,0 +1,36 @@
+@use "../base/abstracts" as *;
+
+.toggle {
+	display: flex;
+	align-items: center;
+	gap: rem(24);
+
+	&__button {
+		appearance: none;
+		background: var(--bg-btn-gradient);
+		border-radius: rem(16);
+		margin: 0;
+		position: relative;
+		display: inline-block;
+		width: rem(56);
+		height: rem(32);
+
+		&:focus-visible {
+			outline: 2px solid var(--outline-violet);
+			outline-offset: 3px;
+		}
+
+		&::before {
+			display: block;
+			content: "";
+			background-color: var(--bg-btn);
+			border-radius: 50%;
+			width: rem(24);
+			height: rem(24);
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			right: rem(4);
+		}
+	}
+}

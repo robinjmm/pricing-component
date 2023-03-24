@@ -1,0 +1,20 @@
+.fa-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+
+	&:active,
+	&:focus-visible {
+		outline: 2px solid var(--outline-violet);
+		outline-offset: 3px;
+	}
+}
+
+.fa-github {
+	font-size: var(--32px);
+	color: var(--text-accent-dark);
+}

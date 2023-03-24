@@ -1,0 +1,58 @@
+@use "../base/abstracts" as *;
+
+.card {
+	width: rem(296);
+	background-color: var(--bg-card);
+	margin: 0 auto;
+	text-align: center;
+	padding: rem(30) rem(28);
+	border-radius: rem(10);
+	box-shadow: 0px 20px 40px 0px hsla(243, 61%, 89%, 0.5);
+
+	&:not(:last-of-type) {
+		margin-bottom: rem(24);
+	}
+
+	&__title {
+		font-size: var(--18px);
+		margin-bottom: rem(24);
+	}
+
+	&__currency {
+		font-size: var(--40px);
+		margin-right: rem(7);
+	}
+
+	&__value {
+		font-size: var(--62px);
+		color: var(--text-accent-dark);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		line-height: 1;
+	}
+
+	&__features {
+		margin: rem(32) 0;
+		border-top: 1px solid var(--border-color);
+		border-bottom: 1px solid var(--border-color);
+	}
+
+	&__feature {
+		padding: rem(12) 0;
+
+		&:not(:last-of-type) {
+			border-bottom: 1px solid var(--border-color);
+		}
+	}
+}
+
+.card--gradient {
+	background: var(--bg-card-gradient);
+	color: var(--text-secondary);
+	box-shadow: none;
+
+	& .card__value {
+		color: var(--text-secondary);
+	}
+}

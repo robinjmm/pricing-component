@@ -1,0 +1,34 @@
+:root {
+	// Font Colors
+	--text-primary: hsl(232, 13%, 49%);
+	--text-secondary: hsl(0, 0%, 100%);
+	--text-accent-violet: hsl(237, 63%, 65%);
+	--text-accent-dark: hsl(232, 13%, 33%);
+
+	// Background Colors
+	--bg-body: hsl(240, 78%, 98%);
+	--bg-card: hsl(0, 0%, 100%);
+	--bg-card-gradient: linear-gradient(135deg, hsl(236, 73%, 79%), hsl(238, 63%, 64%));
+	--bg-btn: hsl(0, 0%, 100%);
+	--bg-btn-gradient: linear-gradient(135deg, hsl(236, 73%, 79%), hsl(238, 63%, 64%));
+
+	// Border/Outline Colors
+	--border-color: hsl(232, 16%, 80%);
+	--outline-violet: hsl(237, 63%, 65%);
+	--outline-white: hsl(0, 0%, 100%);
+
+	// Font Families
+	--ff-primary: "Montserrat", sans-serif;
+
+	// Font Sizes
+	--13px: 0.8125rem;
+	--15px: 0.9375rem;
+	--18px: 1.125rem;
+	--32px: 2rem;
+	--40px: 2.5rem;
+	--62px: 3.75rem;
+	--72px: 4.5rem;
+
+	// Font Weights
+	--fw-bold: 700;
+}
