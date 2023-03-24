@@ -10,6 +10,7 @@
 	padding: rem(14) 0;
 	border-radius: rem(6);
 
+	&:active,
 	&:focus-visible {
 		background: transparent;
 		color: var(--text-accent-violet);
@@ -21,8 +22,8 @@
 	background: var(--bg-btn);
 	color: var(--text-accent-violet);
 
+	&:active,
 	&:focus-visible {
-		background: transparent;
 		color: var(--text-secondary);
 		outline: 1px solid var(--outline-white);
 	}

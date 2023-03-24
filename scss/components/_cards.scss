@@ -2,8 +2,9 @@
 
 .card {
 	width: rem(296);
-	background-color: var(--bg-card);
+	max-width: rem(350);
 	margin: 0 auto;
+	background-color: var(--bg-card);
 	text-align: center;
 	padding: rem(30) rem(28);
 	border-radius: rem(10);

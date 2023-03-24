@@ -1,7 +1,6 @@
 @use "../base/abstracts" as *;
 
 body {
-	align-items: center;
 	background-color: var(--bg-body);
 	background: url("/images/bg-top.svg") no-repeat, url("/images/bg-bottom.svg") no-repeat;
 	background-position: top rem(-25) right rem(-190), bottom rem(-320) left 0;
@@ -17,6 +16,14 @@ header {
 	margin: 0 auto;
 	text-align: center;
 	margin-bottom: rem(80);
+}
+
+.container {
+	width: 100%;
+}
+
+main {
+	flex-shrink: 0;
 }
 
 h1 {

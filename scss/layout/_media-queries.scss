@@ -1,5 +1,24 @@
 @use "../base/abstracts" as *;
 
+@media (any-hover: hover) {
+	.toggle__button:hover {
+		cursor: pointer;
+	}
+
+	.button:hover {
+		cursor: pointer;
+		background: transparent;
+		color: var(--text-accent-violet);
+		outline: 1px solid var(--outline-violet);
+	}
+
+	.button--white:hover {
+		color: var(--text-secondary);
+		outline: 1px solid var(--outline-white);
+	}
+
+}
+
 @media (min-width: rem(375)) {
 	.card {
 		width: 87%;
@@ -8,5 +27,29 @@
 		&__value {
 			font-size: var(--72px);
 		}
+	}
+}
+
+@media (min-width: rem(768)) {
+	body {
+		background-position: top 0 right 0, bottom 0 left 0;
+	}
+}
+
+@media (min-width: rem(1100)) {
+	main {
+		display: flex;
+		align-items: center;
+		width: rem(1050);
+		margin: 0 auto;
+	}
+
+	.card:not(:last-of-type) {
+		margin-bottom: 0;
+	}
+
+	.card--gradient {
+		padding-top: rem(55);
+		padding-bottom: rem(55);
 	}
 }
