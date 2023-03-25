@@ -31,6 +31,10 @@
 		align-items: center;
 		justify-content: center;
 		line-height: 1;
+
+		&--month {
+			display: none;
+		}
 	}
 
 	&__features {

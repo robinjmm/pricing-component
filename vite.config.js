@@ -1,5 +1,5 @@
-import {defineConfig} from "vite";
-import {createHtmlPlugin} from "vite-plugin-html";
+import { defineConfig } from "vite";
+import { createHtmlPlugin } from "vite-plugin-html";
 import postcssPresetEnv from "postcss-preset-env";
 import purgeCSSPlugin from "@fullhuman/postcss-purgecss";
 
