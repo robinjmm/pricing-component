@@ -8,14 +8,11 @@
 
 	.button:hover {
 		cursor: pointer;
-		background: transparent;
-		color: var(--text-accent-violet);
-		outline: 1px solid var(--outline-violet);
+		@include button-active;
 	}
 
 	.button--white:hover {
-		color: var(--text-secondary);
-		outline: 1px solid var(--outline-white);
+		@include button-white-active;
 	}
 
 }

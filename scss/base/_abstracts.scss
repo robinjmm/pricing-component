@@ -9,3 +9,14 @@
 	$emValue: calc(($value / $base-font-size) * 1em);
 	@return $emValue;
 }
+
+@mixin button-active {
+	background: transparent;
+	color: var(--text-accent-violet);
+	outline: 1px solid var(--outline-violet);
+}
+
+@mixin button-white-active {
+	color: var(--text-secondary);
+	outline: 1px solid var(--outline-white);
+}

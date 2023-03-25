@@ -10,11 +10,13 @@
 	padding: rem(14) 0;
 	border-radius: rem(6);
 
-	&:active,
+	&:active {
+		@include button-active;
+	}
+
 	&:focus-visible {
-		background: transparent;
-		color: var(--text-accent-violet);
-		outline: 1px solid var(--outline-violet);
+		outline: 2px solid var(--outline-violet);
+		outline-offset: 3px;
 	}
 }
 
@@ -22,9 +24,12 @@
 	background: var(--bg-btn);
 	color: var(--text-accent-violet);
 
-	&:active,
+	&:active {
+		@include button-white-active;
+	}
+
 	&:focus-visible {
-		color: var(--text-secondary);
-		outline: 1px solid var(--outline-white);
+		outline: 2px solid var(--outline-white);
+		outline-offset: 3px;
 	}
 }
