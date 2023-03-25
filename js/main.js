@@ -16,7 +16,7 @@ window.addEventListener("DOMContentLoaded", () => {
 	toggleButton.addEventListener("change", (event) => {
 		if (event.target.checked) {
 			monthlyValue.forEach((value) => {
-				value.style.display = "block";
+				value.style.display = "flex";
 			});
 
 			yearlyValue.forEach((value) => {
@@ -28,7 +28,7 @@ window.addEventListener("DOMContentLoaded", () => {
 			});
 
 			yearlyValue.forEach((value) => {
-				value.style.display = "block";
+				value.style.display = "flex";
 			});
 		}
 	});

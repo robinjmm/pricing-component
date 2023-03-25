@@ -1,6 +1,8 @@
 @use "../base/abstracts" as *;
 
 body {
+	display: flex;
+	align-items: center;
 	background-color: var(--bg-body);
 	background: url("/images/bg-top.svg") no-repeat, url("/images/bg-bottom.svg") no-repeat;
 	background-position: top rem(-25) right rem(-190), bottom rem(-320) left 0;
